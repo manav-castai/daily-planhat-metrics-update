@@ -40,6 +40,8 @@ Create a `.env` file in the root of the project and set the following environmen
 ### Usage
 To simulate or test the script, you can comment out the `update_planhat` function call to avoid sending updates to Planhat during testing.
 
+Note: The 'pull_and_update(request)' is the entry point for the entire script.
+
 - Run it locally:
     ```bash
     python main.py
