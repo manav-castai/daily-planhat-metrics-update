@@ -29,7 +29,14 @@ This project provides a daily update mechanism that pulls billing data from a GC
     ```
 
 ### Environment Variables
+
+- **GCP_SERVICE_ACCOUNT_JSON**: The JSON content of your GCP service account credentials (in string format).
+- **PLANHAT_API_TOKEN**: The API token for authenticating with Planhat.
+- **PLANHAT_TENANT_TOKEN**: The tenant ID used for Planhat API calls.
+- **BILLING_BUCKET_NAME**: The name of the GCP storage bucket containing the billing data.
+
 Create a `.env` file in the root of the project and set the following environment variables:
+
 - GCP_SERVICE_ACCOUNT_JSON = "<your-service-account-json>"
 - PLANHAT_API_TOKEN = "<your-planhat-api-token>"
 - BILLING_BUCKET_NAME = "<your-billing-bucket-name>"
